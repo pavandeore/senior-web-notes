@@ -68,8 +68,42 @@ downloads resources that are likely to be needed in the future
 
 6] Object reference and Destructuring
 
+obj2 = {...obj1}
+// only top level 
 
 
+------------
+
+7] Performance Navigation Timing
+
+[DNS]
+DomainLookupStart -> DomainLookupEnd 
+
+[TCP-TLS]
+connectStart -> secureConnectionStart -> connectEnd
+
+[HTTP Req]
+requestStart 
+
+[HTTP Res]
+responseStart -> responseEnd
+
+[DOM]
+domLoading
+domInteractive
+domContentLoadedEventStart
+domContentLoadedEventEnd
+domComplete
+
+[Load]
+loadEventStart
+loadEventEnd
+
+---------------
+
+8] Cache Directive
+
+no-cache
 
 
 
