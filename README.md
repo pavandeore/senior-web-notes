@@ -113,8 +113,82 @@ stale-while-revalidate - serves state content while validating the cached respon
 
 -----------------
 
+9] Garbage Collection
+
+dynamic data always stored in heap 
+as soon as we set things to null it removes it from callstack and thus the heap data is also removed 
+
+-------------
+
+10] Animation Cost
+
+when we change 
+
+width: Layout -> Paint -> Composite
+opacity: only Composite
+backgroung-image: Paint -> Composite
+left: Layout -> Paint -> Composite
+Transform: Layout -> Composite
 
 
+---------------
+
+11] Event Propagation
+
+3 steps - Capturing, Target, Bubling
+
+by default click listenres runs during bubling phase
+you can change this by passing 2nd argument true, false
+
+capturing - top to bottom
+target - actual target
+bubling - bottom to top
+
+
+------------------------
+
+12]  Css Specificity
+
+inline
+ID
+classes, attribute
+element
+
+-----------------------
+
+13]  Weakmap
+
+
+
+---------------------------
+
+14] Web vitals
+
+<pre>
+TTFB - time it takes for the server to respond to a request and start sending data back to client
+FID - time it takes for webpage to users first interaction
+TTI - the time it takes to be fully loaded and responsive to user input
+TBT - the time that the main thread is blocked from responding to user input
+CLS - the stability of webpages' layout or unexpected layout shifts that occur on webpage as it loads
+INP - the average time it takes for webapge to update its visuals afteer a users interacts it
+</pre>
+
+
+----------------------------
+
+15] Content Security Policy header (CSP)
+
+with csp header we cab control where our website can load resources from 
+
+
+
+------------------------
+
+16] 
+
+
+
+---------------------
 
 
 
