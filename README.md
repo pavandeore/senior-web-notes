@@ -75,7 +75,7 @@ obj2 = {...obj1}
 ------------
 
 7] Performance Navigation Timing
-
+<pre>
 [DNS]
 DomainLookupStart -> DomainLookupEnd 
 
@@ -98,12 +98,22 @@ domComplete
 [Load]
 loadEventStart
 loadEventEnd
+</pre>
 
 ---------------
 
 8] Cache Directive
 
-no-cache
+no-cache - validates a cache response with origin server before using it, even if it is still refresh  ( it will always make request to server before using cache version [remeeber ETag verfication] ) 
+must-revalidate - validates a state response with the origin server before using it.
+no-store - doesn't cache any part (perfect for sensitve data maybe financial record)
+private - prevent caching on shared caches (maybe you have cdn in between) it makes sure that caching happens only on user http client
+stale-while-revalidate - serves state content while validating the cached response with the origin server 
+
+
+-----------------
+
+
 
 
 
