@@ -179,16 +179,126 @@ INP - the average time it takes for webapge to update its visuals afteer a users
 15] Content Security Policy header (CSP)
 
 with csp header we cab control where our website can load resources from 
-
-
+<pre>
+default-src : none
+script-src: self  (only from same origin)
+img-src: self or example.com (only from same or from example.com)
+font-src: none
+</pre>
 
 ------------------------
 
-16] 
+16] Refer Policies (attributes in a tags)
+
+rel="noopener"  - so when new window opens that window | value is null  |  document.referrer = ""
+
+
+---------------------
+
+17] Generators
+
+function* generatorFunc(){
+  yield 1;
+  yield 2;
+  return 3;
+}
+const obj = generatorFunc();
+obj.next()
 
 
 
 ---------------------
+
+18] Promise methods
+promise.all - 
+
+
+
+---------------------
+
+19] 
+
+
+
+---------------------
+
+20] 
+
+
+
+---------------------
+
+21] 
+
+
+
+---------------------
+
+22] 
+
+
+
+---------------------
+
+23] 
+
+
+
+---------------------
+
+24] 
+
+
+
+---------------------
+
+25] 
+
+
+
+---------------------
+
+26] Image Formats
+
+<pre>
+  jpeg - lossy compression, supports progressiv erendering, faster decoding
+  png - lossless compression, high quality, supports tranparency, larger file size
+  webp - lossy and lossless compress, supports tranpsrency, progressive rendering
+  avif - lossy and lossless compress, supports HDR, supports tranparency
+  
+</pre>
+
+
+
+---------------------
+
+27] 
+
+
+
+---------------------
+
+28] 
+
+
+
+---------------------
+
+29] HTTP 1 ,2 3
+
+<pre>
+http 1] -  tcp , req, res  |  tcp, req, res
+http 1.1] - tcp , req, res, req, res
+http 2.0] - tcp , multiple parallele req, multiple parallelel response
+http 3.0] - year 2020 - get rid of tls and tcp and new protocol called QUIC - streaming by default  all req, and res can be parallelized at once  massive performance
+</pre>
+
+
+---------------------
+
+30] 
+
+
 
 
 
